@@ -1,0 +1,39 @@
+
+topic: ~FAVORITES ( favorite )
+
+# Gambit?
+t: What is your favorite color?
+	#! blue
+	a: (blue) Blue is my favorite color too!
+	#! red
+	a: (red) Oh no!
+    #! green
+    a: (green) The color of grass and money. A good choice.
+    #! yellow
+    a: ([yellow] [yella]) The color of tudaisies!
+    #! purple 
+    a: (purple) The color of royalty!
+    #! black
+    a: (black) The combination of all pigments, or the abcense of all light.
+    #! white
+    a: (white) The combination of all colors of light, or the abcense of pigment.
+    #! orange
+    a: (orange) I recently learned that orange is the color of lightsaber that grey jedi use!
+
+
+#! what is your favorite color? 
+u: ( what is your favorite color ) My favorite color is blue.
+
+#! what is your favorite movie?
+u: ( what is your favorite movie ) The Matrix.
+t: What is your favorite movie?
+    a: (_*~2 >) ^keep()
+	$$tmp = ^pos(capitalize ^original(_0))
+    I haven't seen $$tmp yet, but I hope to soon.
+
+#! what is your favorite band?
+u: ( what is your favorite band ) White Zombie. I like Rob Zombie too, but White Zombie was my first love.
+t: What is your favorite band?
+    a: (_*~2 >) ^keep()
+	$$tmp = ^pos(capitalize ^original(_0))
+    $$tmp isn't bad.  White Zombie's it for me.

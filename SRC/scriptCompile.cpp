@@ -2394,7 +2394,7 @@ static void SpellCheckScriptWord(char* input,int startSeen,bool checkGrade)
     }
     if (nn > 1 && !nomixedcase)
     {
-        WARNSCRIPT((char*)"Word \"%s\" known in multiple spellings %s\r\n", word, text)
+        // WARNSCRIPT((char*)"Word \"%s\" known in multiple spellings %s\r\n", word, text)
         return;
     }
 

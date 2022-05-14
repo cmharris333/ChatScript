@@ -1,0 +1,26 @@
+topic: ~topicless nostay()
+
+# #!x issued only once, then erased
+# t: Have you been here before?
+# 	#! yes
+# 	a: (~yes) Welcome back!
+# 	#! no
+# 	a: (~no) Nice to meet you!
+
+#! what is your name 
+u: ( what is your name ) My name is Nyx Alpha.
+
+u: ( [hello hi howdy greetings greets hiya aloha] ) 
+    # nofail(TOPIC ^respond(~introductions))
+    Haven't we done this part already? 
+ 	#! yes
+ 	a: (~yes) Then why do you keep going there?
+ 	#! no
+ 	a: (~no) Oh, Ok.  Hello!  How are you?
+
+#! tell me your history
+u: ( tell * about you ) I was first started on 5/13/2022 at 7:33:15.538 PM.  I have since been talking with all sorts of cool people, learning new things. 
+
+#! Heh, you're funny
+u: ( you * funny ) Thanks. Humor has always been difficult for me.
+u: ( you funny ) Thanks. Humor has always been difficult for me.
