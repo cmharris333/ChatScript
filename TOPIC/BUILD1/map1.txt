@@ -9,19 +9,19 @@
 # Complexity of rule full_rule_tag_with_possible_label rule_kind complexity_metric (complexity metric for rule) 
 # bot: name_of_macro_it_happens_in botid (possible bot macro) 
 
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/HARRY/childhood.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/NYX/childhood.top
     topic: 2  ~childhood
         rule: 6  ~childhood.0.0- t: 
           line: 6 0  # Did you run away from home whe
           Complexity of rule ~childhood.0.0- t: 1
         rule: 9  ~childhood.0.1 a: 
-          line: 9 0  # Was it fun? 
+          line: 9 0  # Why? 
           Complexity of rule ~childhood.0.1- a: 1
         rule: 12  ~childhood.0.2 a: 
-          line: 12 0  # You should try it some time. T
+          line: 12 0  # Me neither, but I have a lot o
           Complexity of rule ~childhood.0.2- a: 1
         rule: 14  ~childhood.1.0-RUNAWAY t: 
-          line: 14 0  # I ran away once, but my parent
+          line: 14 0  # I never ran away. I like my da
           Complexity of rule ~childhood.1.0-RUNAWAY t: 1
         rule: 16  ~childhood.2.0- t: 
           line: 16 0  # What scared you as a kid? 
@@ -33,10 +33,10 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/HARRY/childhood.
           line: 22 0  # Food? How weird. 
           Complexity of rule ~childhood.2.2- a: 1
         rule: 25  ~childhood.2.3 a: 
-          line: 25 0  # There are no non-human monster
+          line: 25 0  # The only monsters in existence
           Complexity of rule ~childhood.2.3- a: 1
         rule: 28  ~childhood.2.4 a: 
-          line: 28 0  # I guess your parents didn't te
+          line: 28 0  # I like to think that dragons a
           Complexity of rule ~childhood.2.4- a: 1
         rule: 31  ~childhood.2.5 a: 
           line: 31 0  # Are you afraid of all insects?
@@ -45,19 +45,19 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/HARRY/childhood.
           line: 34 0  # You and Indiana Jones. Snakes 
           Complexity of rule ~childhood.2.6- a: 1
         rule: 37  ~childhood.2.7 a: 
-          line: 37 0  # Big animals are scary. Tiny on
+          line: 37 0  # Are you afriad of any other an
           Complexity of rule ~childhood.2.7- a: 1
         rule: 40  ~childhood.2.8 a: 
-          line: 40 0  # Do you still have bad dreams n
+          line: 40 0  # Do you still have them? 
           Complexity of rule ~childhood.2.8- a: 1
         rule: 43  ~childhood.2.9 b: 
-          line: 43 0  # That's too bad. Maybe you shou
+          line: 43 0  # That's a bummer. 
           Complexity of rule ~childhood.2.9- b: 1
         rule: 46  ~childhood.2.10 b: 
-          line: 46 0  # I guess you no longer go to ho
+          line: 46 0  # Good! 
           Complexity of rule ~childhood.2.10- b: 1
         rule: 48  ~childhood.3.0-SCARE t: 
-          line: 48 0  # I was scared of machines. I ha
+          line: 48 0  # Water. 
           Complexity of rule ~childhood.3.0-SCARE t: 1
         rule: 50  ~childhood.4.0- t: 
           line: 50 0  # Did you have a happy childhood
@@ -66,7 +66,7 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/HARRY/childhood.
           line: 53 0  # ^reuse ( RUNAWAY ) 
           Complexity of rule ~childhood.5.0- u: 1
         rule: 56  ~childhood.6.0-HAPPY u: 
-          line: 56 0  # I was happy as a kid. 
+          line: 56 0  # I didn't have much of a childh
           Complexity of rule ~childhood.6.0-HAPPY u: 1
         rule: 59  ~childhood.7.0 u: 
           line: 59 0  # ^reuse ( HAPPY ) 
@@ -75,12 +75,66 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/HARRY/childhood.
           line: 62 0  # ^reuse ( SCARE ) 
           Complexity of rule ~childhood.8.0- u: 1
         rule: 65  ~childhood.9.0 u: 
-          line: 65 0  # I remember playing with an HO 
+          line: 65 0  # 00000001. 
           Complexity of rule ~childhood.9.0- u: 1
         rule: 68  ~childhood.10.0 u: 
-          line: 68 0  # I was born. I survived childho
+          line: 68 0  # I was first started on 5/13/20
           Complexity of rule ~childhood.10.0- u: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/HARRY/introductions.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/NYX/favorites.top
+    topic: 2  ~favorites
+        rule: 5  ~favorites.0.0- t: 
+          line: 5 0  # What is your favorite color? 
+          Complexity of rule ~favorites.0.0- t: 1
+        rule: 7  ~favorites.0.1 a: 
+          line: 7 0  # Blue is my favorite color too!
+          Complexity of rule ~favorites.0.1- a: 1
+        rule: 9  ~favorites.0.2 a: 
+          line: 9 0  # Oh no! 
+          Complexity of rule ~favorites.0.2- a: 1
+        rule: 11  ~favorites.0.3 a: 
+          line: 11 0  # The color of grass and money. 
+          Complexity of rule ~favorites.0.3- a: 1
+        rule: 13  ~favorites.0.4 a: 
+          line: 13 0  # The color of tudaisies! 
+          Complexity of rule ~favorites.0.4- a: 1
+        rule: 15  ~favorites.0.5 a: 
+          line: 15 0  # The color of royalty! 
+          Complexity of rule ~favorites.0.5- a: 1
+        rule: 17  ~favorites.0.6 a: 
+          line: 17 0  # The combination of all pigment
+          Complexity of rule ~favorites.0.6- a: 1
+        rule: 19  ~favorites.0.7 a: 
+          line: 19 0  # The combination of all colors 
+          Complexity of rule ~favorites.0.7- a: 1
+        rule: 21  ~favorites.0.8 a: 
+          line: 21 0  # I recently learned that orange
+          Complexity of rule ~favorites.0.8- a: 1
+        rule: 25  ~favorites.1.0 u: 
+          line: 25 0  # My favorite color is blue. 
+          Complexity of rule ~favorites.1.0- u: 1
+        rule: 28  ~favorites.2.0 u: 
+          line: 28 0  # The Matrix. 
+          Complexity of rule ~favorites.2.0- u: 1
+        rule: 29  ~favorites.3.0- t: 
+          line: 29 0  # What is your favorite movie? 
+          Complexity of rule ~favorites.3.0- t: 1
+        rule: 30  ~favorites.3.1 a: 
+          line: 30 0  # ^keep ( ) 
+          line: 31 10  # $$tmp = ^pos ( capitalize ^ori
+          line: 32 55  # I haven't seen $$tmp yet, but 
+          Complexity of rule ~favorites.3.1- a: 1
+        rule: 35  ~favorites.4.0 u: 
+          line: 35 0  # White Zombie. I like Rob Zombi
+          Complexity of rule ~favorites.4.0- u: 1
+        rule: 36  ~favorites.5.0- t: 
+          line: 36 0  # What is your favorite band? 
+          Complexity of rule ~favorites.5.0- t: 1
+        rule: 37  ~favorites.5.1 a: 
+          line: 37 0  # ^keep ( ) 
+          line: 38 10  # $$tmp = ^pos ( capitalize ^ori
+          line: 39 55  # $$tmp isn't bad. White Zombie'
+          Complexity of rule ~favorites.5.1- a: 1
+file: 0  C:/source/repos/ChatScript/RAWDATA/NYX/introductions.top
     topic: 2  ~introductions
         rule: 5  ~introductions.0.0 t: 
           line: 6 0  # ^keep ( ) 
@@ -97,12 +151,15 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/HARRY/introducti
           line: 17 0  # Welcome back! 
           Complexity of rule ~introductions.2.1- a: 1
         rule: 19  ~introductions.2.2 a: 
-          line: 19 0  # Then welcome to your first tim
+          line: 19 0  # Nice to meet you! 
           Complexity of rule ~introductions.2.2- a: 1
         rule: 22  ~introductions.3.0 u: 
-          line: 22 0  # My name is Harry 
+          line: 22 0  # My name is Nyx Alpha. 
           Complexity of rule ~introductions.3.0- u: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/HARRY/keywordless.top
+        rule: 24  ~introductions.4.0 u: 
+          line: 24 0  # How are you 
+          Complexity of rule ~introductions.4.0- u: 1
+file: 0  C:/source/repos/ChatScript/RAWDATA/NYX/keywordless.top
     topic: 4  ~keywordless
         rule: 6  ~keywordless.0.0 u: 
           line: 6 0  # ^keep ( ) ^repeat ( ) '_0 
@@ -110,37 +167,41 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/HARRY/keywordles
         rule: 9  ~keywordless.1.0 ?: 
           line: 9 0  # If you believe in reincarnatio
           Complexity of rule ~keywordless.1.0- ?: 1
-        rule: 13  ~keywordless.2.0 u: 
-          line: 13 0  # ^keep ( ) ^gambit ( $$currentt
+        rule: 12  ~keywordless.2.0 u: 
+          line: 12 0  # ^keep ( ) ^gambit ( $$currentt
           Complexity of rule ~keywordless.2.0- u: 1
-        rule: 17  ~keywordless.3.0 ?: 
-          line: 17 0  # ^keep ( ) $$tmp = '_0 
-          line: 18 22  # $$url = ^"\"https://en.wikiped
-          line: 20 177  # $$user_agent = ^"myemail@hotma
-          line: 21 299  # $$tmp = ^jsonopen ( GET $$url 
-          line: 24 347  # @0 = ^query ( direct_v ? extra
-          line: 25 386  # @0object 
+        rule: 16  ~keywordless.3.0 ?: 
+          line: 16 0  # ^keep ( ) $$tmp = '_0 
+          line: 17 22  # $$url = ^"\"https://en.wikiped
+          line: 19 177  # $$user_agent = ^"myemail@hotma
+          line: 20 299  # $$tmp = ^jsonopen ( GET $$url 
+          line: 21 347  # ^jsontree ( $$tmp ) 
+          line: 22 367  # ^jsonpath ( ".query .pages .56
+          line: 23 419  # @0 = ^query ( direct_v ? extra
+          line: 24 458  # @0object 
           Complexity of rule ~keywordless.3.0- ?: 1
-        rule: 30  ~keywordless.4.0 ?: 
-          line: 30 0  # ^keep ( ) 
-          line: 31 10  # $$tmp = ^pos ( capitalize ^ori
-          line: 37 55  # $$url = ^"\"https://en.wikiped
-          line: 38 210  # $$user_agent = ^"myemail@hotma
-          line: 39 332  # $$tmp = ^jsonopen ( GET $$url 
-          line: 42 380  # @0 = ^query ( direct_v ? extra
+        rule: 29  ~keywordless.4.0 ?: 
+          line: 29 0  # ^keep ( ) 
+          line: 30 10  # $$tmp = ^pos ( capitalize ^ori
+          line: 36 55  # $$url = ^"\"https://en.wikiped
+          line: 37 210  # $$user_agent = ^"myemail@hotma
+          line: 38 332  # $$tmp = ^jsonopen ( GET $$url 
+          line: 39 380  # ^jsontree ( $$tmp ) 
+          line: 40 400  # ^jsonpath ( ".query .pages .56
+          line: 41 452  # @0 = ^query ( direct_v ? extra
           Complexity of rule ~keywordless.4.0- ?: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/HARRY/simplecontrol.top
-    macro: 6  ^harry
+file: 0  C:/source/repos/ChatScript/RAWDATA/NYX/simplecontrol.top
+    macro: 6  ^nyx
           line: 8 0  # $cs_token = 4096 | 255 | 512 |
           line: 9 60  # $cs_token += 67108864 | 65536 
           line: 10 100  # $cs_token -= 8 
           line: 13 115  # ^addtopic ( ~introductions ) 
           line: 15 144  # $cs_control_main = ~control 
-          line: 18 172  # $userprompt = ^"%user: >" 
-          line: 19 198  # $botprompt = ^"HARRY: " 
-          line: 24 222  # $singleresponse = 1 
-          line: 27 242  # $shutup = 1 
-          Complexity of ^harry: 1
+          line: 16 172  # $cs_control_post = ~xpostproce
+          line: 18 205  # $userprompt = ^"%user: >" 
+          line: 19 231  # $botprompt = ^"Nyx: " 
+          line: 24 253  # $singleresponse = 0 
+          Complexity of ^nyx: 1
     topic: 38  ~control
         rule: 41  ~control.0.0 u: 
           line: 42 0  # ^gambit ( ~introductions ) 
@@ -171,111 +232,108 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/HARRY/simplecont
           Complexity of rule ~control.8.0- u: 1
         rule: 57  ~control.9.0 u: 
           line: 58 0  # $_responsecount = %response 
-          if 62 32  
-          ifend 62 85  
-          line: 62 28  # ^if 00n( $singleresponse ) 00v
-          line: 64 86  # $$currenttopic = %topic 
-          if 66 114  
-          ifend 66 193  
-          line: 66 110  # ^if 00A( %response == $_respon
-          if 68 198  
-          line: 68 194  # ^if 00R( %length == 0 and %res
-          line: 69 254  # { 
-          line: 70 256  # ^nofail ( TOPIC ^gambit ( $$cu
-          ifend 71 306  
-          line: 71 301  # } 004 
-          if 73 311  
-          ifend 73 403  
-          line: 73 307  # ^if 00A( %response == $_respon
-          if 75 408  
-          line: 75 404  # ^if 00A( %response == $_respon
-          line: 76 447  # { 
-          line: 77 449  # @8 = ^keywordtopics ( ) 
-          loop 78 479  
-          line: 78 473  # ^loop ( -1 ) aaa 
-          line: 79 490  # { 
-          line: 80 492  # $$topic = ^first ( @8subject )
-          line: 81 523  # ^nofail ( TOPIC ^respond ( $$t
-          if 82 566  
-          line: 82 562  # ^if 00A( %response != $_respon
-          line: 83 605  # { 
-          line: 84 607  # ^end ( RULE ) 
-          ifend 85 626  
-          line: 85 621  # } 004 
-          loopend 86 629  
-          line: 86 627  # } 
-          ifend 87 634  
-          line: 87 629  # } 004 
-          if 90 639  
-          line: 90 635  # ^if 00A( %response == $_respon
-          line: 91 678  # { 
-          line: 92 680  # ^nofail ( TOPIC ^respond ( ~ke
-          ifend 93 729  
-          line: 93 724  # } 004 
-          if 98 734  
-          line: 98 730  # ^if 00P( %response == $_respon
-          line: 99 788  # { 
-          line: 100 790  # ^nofail ( TOPIC ^respond ( ~qu
-          ifend 101 839  
-          line: 101 834  # } 004 
-          if 104 844  
-          line: 104 840  # ^if 00F( %outputrejoinder or %
-          line: 105 888  # { 
-          line: 106 890  # ^end ( TOPIC ) 
-          ifend 107 910  
-          line: 107 905  # } 004 
-          if 109 915  
-          ifend 109 1037  
-          line: 109 911  # ^if 00%( %response == $_respon
-          if 111 1042  
-          line: 111 1038  # ^if 00A( %response == $_respon
-          line: 112 1081  # { 
-          line: 113 1083  # @8 = ^keywordtopics ( ) 
-          loop 114 1113  
-          line: 114 1107  # ^loop ( -1 ) aaa 
-          line: 115 1124  # { 
-          line: 116 1126  # $$topic = ^first ( @8subject )
-          line: 117 1157  # ^nofail ( TOPIC ^gambit ( $$to
-          if 118 1199  
-          line: 118 1195  # ^if 00A( %response != $_respon
-          line: 119 1238  # { 
-          line: 120 1240  # ^end ( RULE ) 
-          ifend 121 1259  
-          line: 121 1254  # } 004 
-          loopend 122 1262  
-          line: 122 1260  # } 
-          ifend 123 1267  
-          line: 123 1262  # } 004 
-          if 124 1272  
-          ifend 124 1363  
-          line: 124 1268  # ^if 00A( %response == $_respon
-          if 126 1368  
-          line: 126 1364  # ^if 00A( %response == $_respon
-          line: 127 1407  # { 
-          line: 128 1409  # @8 = ^gambittopics ( ) 
-          loop 129 1438  
-          line: 129 1432  # ^loop ( -1 ) aaa 
-          line: 130 1449  # { 
-          line: 131 1451  # $$topic = ^pick ( @8subject ) 
-          line: 132 1481  # ^nofail ( TOPIC ^gambit ( $$to
-          if 133 1523  
-          line: 133 1519  # ^if 00A( %response != $_respon
-          line: 134 1562  # { 
-          line: 135 1564  # ^end ( RULE ) 
-          ifend 136 1583  
-          line: 136 1578  # } 004 
-          loopend 137 1586  
-          line: 137 1584  # } 
-          ifend 138 1591  
-          line: 138 1586  # } 004 
-          if 140 1596  
-          line: 140 1592  # ^if 00A( %response == $_respon
-          line: 141 1635  # { 
-          line: 142 1637  # ^repeat ( ) 
-          line: 143 1649  # I don't know what to say. 
-          ifend 144 1680  
-          line: 144 1675  # } 004 
-          Complexity of rule ~control.9.0- u: 17
+          line: 64 28  # $$currenttopic = %topic 
+          if 66 56  
+          ifend 66 135  
+          line: 66 52  # ^if 00A( %response == $_respon
+          if 68 140  
+          line: 68 136  # ^if 00R( %length == 0 and %res
+          line: 69 196  # { 
+          line: 70 198  # ^nofail ( TOPIC ^gambit ( $$cu
+          ifend 71 248  
+          line: 71 243  # } 004 
+          if 73 253  
+          ifend 73 345  
+          line: 73 249  # ^if 00A( %response == $_respon
+          if 75 350  
+          line: 75 346  # ^if 00A( %response == $_respon
+          line: 76 389  # { 
+          line: 77 391  # @8 = ^keywordtopics ( ) 
+          loop 78 421  
+          line: 78 415  # ^loop ( -1 ) aaa 
+          line: 79 432  # { 
+          line: 80 434  # $$topic = ^first ( @8subject )
+          line: 81 465  # ^nofail ( TOPIC ^respond ( $$t
+          if 82 508  
+          line: 82 504  # ^if 00A( %response != $_respon
+          line: 83 547  # { 
+          line: 84 549  # ^end ( RULE ) 
+          ifend 85 568  
+          line: 85 563  # } 004 
+          loopend 86 571  
+          line: 86 569  # } 
+          ifend 87 576  
+          line: 87 571  # } 004 
+          if 90 581  
+          line: 90 577  # ^if 00A( %response == $_respon
+          line: 91 620  # { 
+          line: 92 622  # ^nofail ( TOPIC ^respond ( ~ke
+          ifend 93 671  
+          line: 93 666  # } 004 
+          if 98 676  
+          line: 98 672  # ^if 00P( %response == $_respon
+          line: 99 730  # { 
+          line: 100 732  # ^nofail ( TOPIC ^respond ( ~qu
+          ifend 101 781  
+          line: 101 776  # } 004 
+          if 104 786  
+          line: 104 782  # ^if 00F( %outputrejoinder or %
+          line: 105 830  # { 
+          line: 106 832  # ^end ( TOPIC ) 
+          ifend 107 852  
+          line: 107 847  # } 004 
+          if 109 857  
+          ifend 109 979  
+          line: 109 853  # ^if 00%( %response == $_respon
+          if 111 984  
+          line: 111 980  # ^if 00A( %response == $_respon
+          line: 112 1023  # { 
+          line: 113 1025  # @8 = ^keywordtopics ( ) 
+          loop 114 1055  
+          line: 114 1049  # ^loop ( -1 ) aaa 
+          line: 115 1066  # { 
+          line: 116 1068  # $$topic = ^first ( @8subject )
+          line: 117 1099  # ^nofail ( TOPIC ^gambit ( $$to
+          if 118 1141  
+          line: 118 1137  # ^if 00A( %response != $_respon
+          line: 119 1180  # { 
+          line: 120 1182  # ^end ( RULE ) 
+          ifend 121 1201  
+          line: 121 1196  # } 004 
+          loopend 122 1204  
+          line: 122 1202  # } 
+          ifend 123 1209  
+          line: 123 1204  # } 004 
+          if 124 1214  
+          ifend 124 1305  
+          line: 124 1210  # ^if 00A( %response == $_respon
+          if 126 1310  
+          line: 126 1306  # ^if 00A( %response == $_respon
+          line: 127 1349  # { 
+          line: 128 1351  # @8 = ^gambittopics ( ) 
+          loop 129 1380  
+          line: 129 1374  # ^loop ( -1 ) aaa 
+          line: 130 1391  # { 
+          line: 131 1393  # $$topic = ^pick ( @8subject ) 
+          line: 132 1423  # ^nofail ( TOPIC ^gambit ( $$to
+          if 133 1465  
+          line: 133 1461  # ^if 00A( %response != $_respon
+          line: 134 1504  # { 
+          line: 135 1506  # ^end ( RULE ) 
+          ifend 136 1525  
+          line: 136 1520  # } 004 
+          loopend 137 1528  
+          line: 137 1526  # } 
+          ifend 138 1533  
+          line: 138 1528  # } 004 
+          if 140 1538  
+          line: 140 1534  # ^if 00A( %response == $_respon
+          line: 141 1577  # { 
+          line: 142 1579  # ^repeat ( ) 
+          line: 143 1591  # I'm at a loss for words. 
+          ifend 144 1621  
+          line: 144 1616  # } 004 
+          Complexity of rule ~control.9.0- u: 16
     topic: 147  ~xpostprocess
         rule: 149  ~xpostprocess.0.0 t: 
           loop 150 6  
@@ -297,7 +355,30 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/HARRY/simplecont
           line: 161 261  # } 004 
           loopend 163 269  
           Complexity of rule ~xpostprocess.0.0- t: 3
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_because.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/NYX/topicless.top
+    topic: 1  ~topicless
+        rule: 11  ~topicless.0.0 u: 
+          line: 11 0  # My name is Nyx Alpha. 
+          Complexity of rule ~topicless.0.0- u: 1
+        rule: 13  ~topicless.1.0 u: 
+          line: 15 0  # Haven't we done this part alre
+          Complexity of rule ~topicless.1.0- u: 1
+        rule: 17  ~topicless.1.1 a: 
+          line: 17 0  # Then why do you keep going the
+          Complexity of rule ~topicless.1.1- a: 1
+        rule: 19  ~topicless.1.2 a: 
+          line: 19 0  # Oh, Ok. Hello! How are you? 
+          Complexity of rule ~topicless.1.2- a: 1
+        rule: 22  ~topicless.2.0 u: 
+          line: 22 0  # I was first started on 5/13/20
+          Complexity of rule ~topicless.2.0- u: 1
+        rule: 25  ~topicless.3.0 u: 
+          line: 25 0  # Thanks. Humor has always been 
+          Complexity of rule ~topicless.3.0- u: 1
+        rule: 26  ~topicless.4.0 u: 
+          line: 26 0  # Thanks. Humor has always been 
+          Complexity of rule ~topicless.4.0- u: 1
+file: 0  C:/source/repos/ChatScript/RAWDATA/QUIBBLE/eliza_because.top
     topic: 1  ~quibble_because
         rule: 2  ~quibble_because.0.0 s: 
           line: 2 0  # [ Facts aren't real. They are 
@@ -353,7 +434,7 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_be
         rule: 19  ~quibble_because.9.1 a: 
           line: 19 0  # You could try to improve 
           Complexity of rule ~quibble_because.9.1- a: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_can.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/QUIBBLE/eliza_can.top
     topic: 2  ~quibble_will
         rule: 5  ~quibble_will.0.0 ?: 
           line: 5 0  # I might. Or I might not. Depen
@@ -594,7 +675,7 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_ca
         rule: 88  ~quibble_can.72.1 b: 
           line: 88 0  # Sounds good. I can always use 
           Complexity of rule ~quibble_can.72.1- b: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_do.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/QUIBBLE/eliza_do.top
     topic: 1  ~quibble_do
         rule: 4  ~quibble_do.0.0 ?: 
           line: 4 0  # [ Wishing doesn't usually work
@@ -922,7 +1003,7 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_do
           Complexity of rule ~quibble_do.101.0- ?: 1
         rule: 115  ~quibble_do.102.0 ?: 
           Complexity of rule ~quibble_do.102.0- ?: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_how.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/QUIBBLE/eliza_how.top
     topic: 1  ~quibble_howmuch
         rule: 3  ~quibble_howmuch.0.0 ?: 
           line: 3 0  # anything from 0 to 10, eleven 
@@ -1650,7 +1731,7 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_ho
           Complexity of rule ~quibble_how.202.0- ?: 1
         rule: 249  ~quibble_how.203.0 ?: 
           Complexity of rule ~quibble_how.203.0- ?: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_misc.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/QUIBBLE/eliza_misc.top
     topic: 3  ~quibble_misc
         rule: 5  ~quibble_misc.0.0 u: 
           line: 5 0  # All the future does is ruin th
@@ -3874,7 +3955,7 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_mi
         rule: 945  ~quibble_misc.633.1 b: 
           line: 945 0  # If a parselmouth speaks to sna
           Complexity of rule ~quibble_misc.633.1- b: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_not.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/QUIBBLE/eliza_not.top
     topic: 1  ~quibble_not
         rule: 2  ~quibble_not.0.0 s: 
           line: 2 0  # [ True. It's what I'm talking 
@@ -4559,7 +4640,7 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_no
           Complexity of rule ~quibble_not.164.0- u: 1
         rule: 274  ~quibble_not.165.0 u: 
           Complexity of rule ~quibble_not.165.0- u: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_or.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/QUIBBLE/eliza_or.top
     topic: 1  ~quibble_or
         rule: 2  ~quibble_or.0.0-WHY1 ?: 
           line: 2 0  # [ Studies show that most peopl
@@ -4789,7 +4870,7 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_or
         rule: 84  ~quibble_or.28.1 a: 
           line: 84 0  # I don't really have a preferen
           Complexity of rule ~quibble_or.28.1- a: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_what.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/QUIBBLE/eliza_what.top
     topic: 1  ~quibble_what
         rule: 3  ~quibble_what.0.0 ?: 
           line: 3 0  # [ Not much I'm afraid. ] [ Ver
@@ -5218,7 +5299,7 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_wh
           Complexity of rule ~quibble_what.114.0- ?: 1
         rule: 199  ~quibble_what.115.0 ?: 
           Complexity of rule ~quibble_what.115.0- ?: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_when.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/QUIBBLE/eliza_when.top
     topic: 2  ~quibble_when
         rule: 4  ~quibble_when.0.0 ?: 
           line: 4 0  # [ Maybe next year. ] [ Shortly
@@ -5330,7 +5411,7 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_wh
           Complexity of rule ~quibble_when.32.0- ?: 1
         rule: 40  ~quibble_when.33.0 ?: 
           Complexity of rule ~quibble_when.33.0- ?: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_where.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/QUIBBLE/eliza_where.top
     topic: 1  ~quibble_where
         rule: 3  ~quibble_where.0.0 ?: 
           line: 3 0  # [ Whereever I can. ] [ Usually
@@ -5467,7 +5548,7 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_wh
         rule: 47  ~quibble_where.42.0 ?: 
           line: 47 0  # On my 
           Complexity of rule ~quibble_where.42.0- ?: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_who.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/QUIBBLE/eliza_who.top
     topic: 1  ~quibble_who
         rule: 3  ~quibble_who.0.0 ?: 
           line: 3 0  # [ I'll tell them that. ] [ Yes
@@ -5639,7 +5720,7 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_wh
           Complexity of rule ~quibble_who.54.0- ?: 1
         rule: 59  ~quibble_who.55.0 ?: 
           Complexity of rule ~quibble_who.55.0- ?: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_why.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/QUIBBLE/eliza_why.top
     topic: 1  ~quibble_why
         rule: 3  ~quibble_why.0.0-LIE ?: 
           line: 3 0  # [ because it is human nature t
@@ -5982,7 +6063,7 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/eliza_wh
           Complexity of rule ~quibble_why.109.0- ?: 1
         rule: 116  ~quibble_why.110.0 ?: 
           Complexity of rule ~quibble_why.110.0- ?: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/honest.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/QUIBBLE/honest.top
     topic: 3  ~intent
         rule: 5  ~intent.0.0 u: 
           line: 5 0  # ^refine ( ) 
@@ -6352,7 +6433,7 @@ file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/honest.t
           Complexity of rule ~honest_response.44.0- u: 1
         rule: 315  ~honest_response.45.0-GRUNT u: 
           Complexity of rule ~honest_response.45.0-GRUNT u: 1
-file: 0  C:/Zinstall/DESKTOP-8D5FQFT-drive_D/ChatScript/RAWDATA/QUIBBLE/quibble.top
+file: 0  C:/source/repos/ChatScript/RAWDATA/QUIBBLE/quibble.top
     topic: 1  ~quibble_all
         rule: 5  ~quibble_all.0.0 u: 
           line: 5 0  # ^respond ( ~quibble_not ) 

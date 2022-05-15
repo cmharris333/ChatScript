@@ -2594,7 +2594,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
         (HINSTANCE)GetWindowLongPtr(scriptData.window, GWLP_HINSTANCE),
         NULL);
 
-    printer = myprintf;
+    //printer = myprintf;
     csThread = _beginthread(MyWorkerInitThread, 0, NULL);
 
 
@@ -3283,7 +3283,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
                 {
                     buffer = AllocateBuffer();
                     WORDP D = FindWord(name);
-                    jwrite(buffer, D, true);
+                    jwrite(0, buffer, D, 1, true);
                     value = buffer;
                 }
                 if (!value) continue;

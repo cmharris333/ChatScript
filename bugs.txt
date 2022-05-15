@@ -1,0 +1,12 @@
+﻿Not allowed to alter query or variable $cs_language from earlier level to ENGLISH Ignored
+
+No such directory VERIFY/*
+
+0 Sat May 14 20:34:48 2022 in sentence:    :build nyx
+Error opening utf8writeappend file VERIFY/childhood-b1.txt: No such file or directory
+
+   in childhood.top at 6: t: Did you run away from home when you were little? 
+    No computer id before user load?
+   in topic_sid_anonymous.txt at 0: ^anonymous
+    Not allowed to alter query or variable $cs_language from earlier level to ENGLISH Ignored
+
