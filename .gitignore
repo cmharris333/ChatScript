@@ -58,3 +58,5 @@ private/KORA/TESTS/*.swp
 !LOGS/
 !USERS/
 !LIVEDATA/
+VS2019/.vs/chatscript/v17/Browse.VC.opendb
+VS2019/.vs/chatscript/v17/ipch/AutoPCH/73164cbcfb99e338/CHATSCRIPTIDE.ipch
