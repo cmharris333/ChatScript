@@ -1,0 +1,51 @@
+﻿<h3>Modal</h3>
+<div class="modal fade show" id="myModal" style="display:block; background-color: rgba(10,10,10,.8);" 
+     aria-modal="true" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">@Title</h4>
+            </div>
+            <div class="modal-body" style="color:black">
+                <p>@Text</p>
+            </div>
+            <div>
+                <center>
+                    <input @bind-value="@UserName"/>
+                </center>
+                <br/><br/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" @onclick=@ModalOk>OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public string Text { get; set; }
+
+    [Parameter]
+    public string UserName { get; set; } = "";
+
+    [Parameter]
+    public EventCallback<string> OnClose { get; set; }
+
+    private Task ModalOk()
+    {
+        if (UserName.Trim() == "")
+        {
+            Text = "Please enter a name so I know what to call you";
+            return OnClose.InvokeAsync("");
+        }
+        else
+            return OnClose.InvokeAsync(UserName);
+    }
+
+
+}
+

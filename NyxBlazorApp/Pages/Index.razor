@@ -1,0 +1,184 @@
+﻿@page "/"
+@inject IJSRuntime JS
+@using System.Text.RegularExpressions;
+@using System.Web
+@using System.Net
+@using System.Net.Sockets
+
+<PageTitle>Nyx</PageTitle>
+
+@*This is where the chat log will start *@
+<div>
+    @((MarkupString)Regex.Replace(HttpUtility.HtmlEncode(@Value), "\r?\n|\r", "<br />"))
+</div>
+<br/><br/><br/><br/>
+
+@*The input form in the footer*@
+<footer class="border-top footer text-muted" style="position: fixed">
+    <div class="container" style="text-align:left">
+        <input @bind="textToProcess" @ref="textInput" id="thisTextInput" style="width:65%;height:25" @onkeyup="@Enter" />
+        <button @onclick="PrintText" id="@SendButton">
+            Say It!
+        </button>
+    </div>
+</footer>
+
+@if (NameDialogOpen)
+{
+<Modal Title="Please Enter Your Name"
+    OnClose="@OnNameDialogClose">
+</Modal>
+}
+
+@*The real magic starts here*@
+@code 
+{
+    // Variables
+    public string UserName { get; set; } = "Test Text";
+    private string BotName = "Nyx";
+    private string chatprefix = "";
+    private string textToProcess = "";
+    private string copyOfTextToProcess = "";
+    private ElementReference textInput;
+    private ElementReference thisTextInput;
+    private ElementReference SendButton;
+    public bool NameDialogOpen { get; set; } = true;
+    private bool FirstTime { get; set; } = true;
+
+    [Parameter]
+    public string Value { get; set; } = "";
+
+    private async Task OnNameDialogClose(string pUserName)
+    {
+        if (pUserName != "")
+        {
+            UserName = pUserName;
+            NameDialogOpen = false;
+            StateHasChanged();
+            chatprefix = UserName + char.MinValue + BotName + char.MinValue;
+            await SendAndReceive(chatprefix + char.MinValue);
+        }
+        else
+        {
+            NameDialogOpen = true;
+            StateHasChanged();
+        }
+    }
+
+    // Handle form input and submission
+    private async Task PrintText()
+    { 
+        Value += UserName + ": " + textToProcess + Environment.NewLine;
+        copyOfTextToProcess = textToProcess;
+        textToProcess = "";
+        StateHasChanged();
+        Scroll();
+    }
+    private async Task PrintUserText(string pStringToPrint)
+    { 
+        Value += UserName + ": " + pStringToPrint + Environment.NewLine;
+        copyOfTextToProcess = textToProcess;
+        textToProcess = "";
+        StateHasChanged();
+        Scroll();
+    }
+    private async Task PrintBotText(string pStringToPrint)
+    { 
+        Value += BotName + ": " + pStringToPrint + Environment.NewLine;
+        copyOfTextToProcess = textToProcess;
+        textToProcess = "";
+        StateHasChanged();
+        Scroll();
+    }
+
+    private async void Scroll()
+    {
+        await JS.InvokeVoidAsync("OnScrollEvent");
+        await textInput.FocusAsync();
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        textInput.FocusAsync();
+    }
+
+    // What happens when the enter key is pressed
+    public async Task Enter(KeyboardEventArgs e)
+    {
+        if (e.Code == "Enter" || e.Code == "NumpadEnter")
+        {
+            copyOfTextToProcess = textToProcess;
+            textToProcess = "";
+            StateHasChanged();
+
+            if (copyOfTextToProcess == "")
+            copyOfTextToProcess = " ";
+
+            if (copyOfTextToProcess.Substring(0,1) == ":")
+            {
+                // do Nothing
+                // await PrintText(chatprefix + textToProcess);
+                //await SendAndReceive(chatprefix + textToProcess);
+            }
+            else
+            {
+                chatprefix = UserName + char.MinValue + BotName + char.MinValue;
+                Console.WriteLine(copyOfTextToProcess);
+                await PrintUserText(copyOfTextToProcess);
+                if (FirstTime)
+                {
+                    await SendAndReceive(chatprefix + char.MinValue);
+                    FirstTime = false;
+                }
+                else
+                    await SendAndReceive(chatprefix + copyOfTextToProcess + char.MinValue);
+            }
+        }
+    }
+
+
+    // Establish connection to chatscript server
+    private async Task SendAndReceive(string textToSend)
+    {
+        Console.WriteLine("Starting connection to Chatscript Server");
+
+        Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        IPAddress ipAddress = IPAddress.Parse("13.89.184.135");
+        IPEndPoint ipe = new IPEndPoint(ipAddress,1025); 
+        
+        Console.WriteLine("Connecting . . .");
+        try { s.Connect(ipe); } 
+        catch(ArgumentNullException ae) {  
+            await PrintUserText(String.Format("ArgumentNullException : {0}", ae.ToString()));  
+        } catch(SocketException se) {  
+            await PrintUserText(String.Format("SocketException : {0}", se.ToString()));  
+        } catch(Exception e) {  
+            await PrintUserText(String.Format("Unexpected exception : {0}", e.ToString()));  
+        }
+
+        if (s.Connected)
+        {
+            Console.WriteLine("       . . . Connected!");
+            // Set up Send
+            Console.WriteLine("Sending Text: " + textToSend);
+            byte[] msg = System.Text.Encoding.ASCII.GetBytes(textToSend);  
+            int bytesSent = s.Send(msg);
+            Console.WriteLine("Sent " + bytesSent.ToString() + " bytes");
+
+            // Set up recieve socket
+            Console.WriteLine("Preparing to receive data . . .");
+            byte[] bytes = new byte[1024];  
+            int bytesRec = s.Receive(bytes);
+            Console.WriteLine("      . . . " + bytesRec.ToString() + " bytes received");
+            Console.WriteLine("Message received: " + System.Text.Encoding.ASCII.GetString(bytes, 0, bytesRec));
+
+            await PrintBotText(System.Text.Encoding.ASCII.GetString(bytes, 0, bytesRec)); 
+
+            
+            Console.WriteLine("Closing Socket");
+            s.Shutdown(SocketShutdown.Both);  
+            s.Close();
+            Console.WriteLine("Socket Closed");
+        }
+    }
+}
